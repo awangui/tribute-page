@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.menu {
+    width: 30px;
+    padding-bottom: 10px;
+}
+.logo{
+    width: 90px;
+}
+.search{
+    padding-bottom: 15px;
+}
+.liked {
+    width: 35px;
+}
+.disliked {
+    width: 13px;
+    margin-left: 5px;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+    </style>
+</head>
+<body>
+    <div>
+        <img class="menu" src="./img/images.png" alt="menu">
+        <img class="logo" src="./img/download.png" alt="yt logo">
+    </div>
+
+    <div class="search">
+        <form action="">
+            <input type="search" name="search" id="search">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+
+    <div>
+        <img class="thumbnail" src="./img/thumbnail (1).jpeg" alt="">
+        <p>YouTube thumbnail design</p>
+        <p>1,000,000 views</p>
+    </div>
+
+    <div ><img class="liked" src="./img/like.png" alt="">
+        <span>1000</span>
+
+    <img class="disliked" src="./img/dislike.png" alt="">
+    <span>500</span>
+    </div>
+    <div class="container">
+        <div class="recommended">
+            <img src="./img/thumbnail (1).jpeg" alt="">
+        </div>
+        <div class="recommended"></div>
+            <img src="./img/thumbnail (1).jpeg" alt="">
+        </div>
+        <div class="recommended"></div>
+            <img src="./img/thumbnail (1).jpeg" alt="">
+        </div>
+    </div>
+</body>
+</html>
