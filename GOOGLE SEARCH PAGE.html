@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .logo{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            font-size: 100pt;
+        }
+
+        .search{
+            padding: 1px 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .searchbar-form {
+      display: flex;
+      align-items: center;
+      border: 1px solid #dfe1e5;
+      border-radius: 24px;
+      padding: 5px 10px;
+      background-color: #fff;
+      width: 500px; 
+      box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    }
+
+    .searchbar {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      outline: none;
+    }
+
+    .searchbar::placeholder {
+      color: #aaa;
+    }
+
+    button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      margin-left: 10px;
+    }
+
+    button img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .mic {
+      margin-left: 10px;
+    }
+
+    .kiswahili{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    </style>
+</head>
+<body>
+    <div class="logo">
+        <span style="color: skyblue;">G</span>
+        <span style="color: red;">o</span>
+        <span style="color: yellow;">o</span>
+        <span style="color: skyblue;">g</span>
+        <span style="color: green;">l</span>
+        <span style="color: red;">e</span>
+    </div>
+
+    <div class="search">
+        <form action="" class="searchbar-form">
+            <input type="search" name="search" id="search" class="searchbar">
+            <button class="mic" title="Search by voice">
+                <img src="./img/mic.svg" alt="Search by voice">
+              </button>
+              <button title="Search by image">
+                <img class="camera" src="./img/camera.svg" alt="Search by image">
+              </button>
+        </form>
+    </div>
+
+    <div class="kiswahili">
+        <p>Google is offered in: <a href="">Kiswahili</a></p>
+    </div>
+</body>
+</html>
