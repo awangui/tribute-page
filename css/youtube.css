@@ -1,0 +1,89 @@
+*{
+    list-style: none;
+    text-decoration: none;
+}
+.header{
+    box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
+}
+.logo{
+    width: 130px;
+    height: auto;
+}
+.search_bar{
+    display: flex;
+    border: 1px solid;
+    border-radius: 20px;
+    margin-left: 200px;
+    height: 40px;
+    margin-top: 15px;
+}
+#search{
+    width: 450px;
+    height: 30px;
+    border: 1px white;
+    margin-top: 5px;
+    border-radius: 20px;
+}
+
+.search i {
+margin-right: 15px;
+}
+.liked_disliked {
+    width: 13px;
+    margin-left: 5px;
+}
+.recommended{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.thumbnail{
+    width: 300px;
+    height: 200px;
+    border-radius: 4px; 
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+p{
+    line-height: 3px;
+}
+.header{
+    display: flex;
+}
+
+button img{
+    width: 20px;
+    height: 20px;
+}
+.main-content{
+    display: flex;
+    flex-direction: row;
+}
+.sidebar{
+    width: 15%;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.1);
+}
+.sidebar ul li{
+    padding: 10px 0;
+    font-size: 18px;
+}
+.sidebar ul li i{
+    font-size: 15px;
+    margin-right: 5px;
+}
+.sidebar ul{
+    padding: 0 15px;
+}
+.main{
+    width: 75%;
+}
+.menu{
+    font-size: 24px;
+    padding: 22px 10px;
+}

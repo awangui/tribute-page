@@ -3,97 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <style>
-.menu {
-    width: 30px;
-    padding-bottom: 10px;
-}
-.logo{
-    width: 90px;
-}
-.search_bar{
-    margin-left: 250px;
-    display: flex;
-    border: 1px solid;
-    border-radius: 20px;
-}
-#search{
-    width: 500px;
-    height: 30px;
-    padding: 10px;
-    margin-top: 5px;
-    border: 1px white;
-}
-.liked_disliked {
-    width: 13px;
-    margin-left: 5px;
-}
-
-.thumbnail{
-    width: 300px;
-    height: 200px;
-}
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/youtube.css">
+    <title>Youtube</title>
 
 
-.container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-left: 20px;
-    margin-bottom: 10px;
-}
-p{
-    line-height: 3px;
-}
-.header{
-    display: flex;
-}
-
-.bt{
-
-}
-
-button img{
-    width: 20px;
-    height: 20px;
-}
-.main-content{
-    display: flex;
-    flex-direction: row;
-}
-.sidebar{
-    width: 20%;
-}
-
-.main{
-    width: 80%;
-}
-    </style>
 </head>
 <body>
     <div class="header">
-        <img class="menu" src="./img/images.png" alt="menu">
+        <i class="fa-solid fa-bars menu"></i>
         <img class="logo" src="./img/download.png" alt="yt logo">
         <div class="search_bar">
-        <form action="">
+    
+    <div class="search">
             <input type="search" name="search" id="search">
-            <button type="submit" class="bt" ><img src="./img/search-svgrepo-com.svg" alt=""></button>
-        </form>
+            <i class="fa-solid fa-magnifying-glass"></i>
+       </div> 
     </div>
     </div>
     <div class="main-content">
 <div class="sidebar">
     <ul>
-        <li>Home</li>
-        <li>Dashboard</li>
-        <li>Settings</li>
+        <li><i class="fa-solid fa-house"></i> Home</li>
+        <li><i class="fa-regular fa-lightbulb"></i>   Shorts</li>
+        <li><i class="fa-brands fa-youtube"></i> Subscriptions</li>
+        <li><i class="fa-regular fa-circle-play"></i> Your channel</li>
+        <li><i class="fa-solid fa-clock-rotate-left"></i> History</li>
+        <li><i class="fa-regular fa-thumbs-up"></i> Liked videos</li>
     </ul>
+
     </div>
     <div class="main">
 <div class="container">
-    <div>
+    <div class="recommended">
         <img class="thumbnail" src="./img/thumbnail (1).jpeg" alt="">
         <p>YouTube thumbnail design</p>
         <p>1,000,000 views</p>
@@ -142,9 +84,7 @@ button img{
         </div>
 
         
-</div>
 
-<div class="container">
 <div class="recommended">
     <img class="thumbnail" src="./img/ytdesi.jpg" alt="">
     <p>YouTube thumbnail design</p>
