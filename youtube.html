@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <style>
 .menu {
     width: 30px;
@@ -12,57 +13,187 @@
 .logo{
     width: 90px;
 }
-.search{
-    padding-bottom: 15px;
+.search_bar{
+    margin-left: 250px;
+    display: flex;
+    border: 1px solid;
+    border-radius: 20px;
 }
-.liked {
-    width: 35px;
+#search{
+    width: 500px;
+    height: 30px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px white;
 }
-.disliked {
+.liked_disliked {
     width: 13px;
     margin-left: 5px;
 }
+
+.thumbnail{
+    width: 300px;
+    height: 200px;
+}
+
+
 .container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+p{
+    line-height: 3px;
+}
+.header{
+    display: flex;
+}
+
+.bt{
+
+}
+
+button img{
+    width: 20px;
+    height: 20px;
+}
+.main-content{
+    display: flex;
+    flex-direction: row;
+}
+.sidebar{
+    width: 20%;
+}
+
+.main{
+    width: 80%;
 }
     </style>
 </head>
 <body>
-    <div>
+    <div class="header">
         <img class="menu" src="./img/images.png" alt="menu">
         <img class="logo" src="./img/download.png" alt="yt logo">
-    </div>
-
-    <div class="search">
+        <div class="search_bar">
         <form action="">
             <input type="search" name="search" id="search">
-            <button type="submit">Search</button>
+            <button type="submit" class="bt" ><img src="./img/search-svgrepo-com.svg" alt=""></button>
         </form>
     </div>
-
+    </div>
+    <div class="main-content">
+<div class="sidebar">
+    <ul>
+        <li>Home</li>
+        <li>Dashboard</li>
+        <li>Settings</li>
+    </ul>
+    </div>
+    <div class="main">
+<div class="container">
     <div>
         <img class="thumbnail" src="./img/thumbnail (1).jpeg" alt="">
         <p>YouTube thumbnail design</p>
         <p>1,000,000 views</p>
+        <div ><img class="liked_disliked" src="./img/thumbs-up-gesture-svgrepo-com.svg" alt="">
+            <span>1000</span>
+    
+        <img class="liked_disliked" src="./img/thumbs-down-hand-svgrepo-com.svg" alt="">
+        <span>500</span>
+        </div>
     </div>
 
-    <div ><img class="liked" src="./img/like.png" alt="">
-        <span>1000</span>
-
-    <img class="disliked" src="./img/dislike.png" alt="">
-    <span>500</span>
-    </div>
-    <div class="container">
+    
         <div class="recommended">
-            <img src="./img/thumbnail (1).jpeg" alt="">
+            <img class="thumbnail" src="./img/attrac.jpeg" alt="">
+            <p>YouTube thumbnail design</p>
+        <p>1,000,000 views</p>
+        <div ><img class="liked_disliked" src="./img/thumbs-up-gesture-svgrepo-com.svg" alt="">
+            <span>1000</span>
+    
+        <img class="liked_disliked" src="./img/thumbs-down-hand-svgrepo-com.svg" alt="">
+        <span>500</span>
         </div>
-        <div class="recommended"></div>
-            <img src="./img/thumbnail (1).jpeg" alt="">
         </div>
-        <div class="recommended"></div>
-            <img src="./img/thumbnail (1).jpeg" alt="">
+        <div class="recommended">
+            <img class="thumbnail" src="./img/secretsthumb.jpeg" alt="">
+            <p>YouTube thumbnail design</p>
+        <p>1,000,000 views</p>
+        <div ><img class="liked_disliked" src="./img/thumbs-up-gesture-svgrepo-com.svg" alt="">
+            <span>1000</span>
+    
+        <img class="liked_disliked" src="./img/thumbs-down-hand-svgrepo-com.svg" alt="">
+        <span>500</span>
         </div>
-    </div>
+        </div>
+
+        <div class="recommended">
+            <img class="thumbnail" src="./img/ytdesi.jpg" alt="">
+            <p>YouTube thumbnail design</p>
+        <p>1,000,000 views</p>
+        <div ><img class="liked_disliked" src="./img/thumbs-up-gesture-svgrepo-com.svg" alt="">
+            <span>1000</span>
+    
+        <img class="liked_disliked" src="./img/thumbs-down-hand-svgrepo-com.svg" alt="">
+        <span>500</span>
+        </div>
+        </div>
+
+        
+</div>
+
+<div class="container">
+<div class="recommended">
+    <img class="thumbnail" src="./img/ytdesi.jpg" alt="">
+    <p>YouTube thumbnail design</p>
+<p>1,000,000 views</p>
+<div ><img class="liked_disliked" src="./img/thumbs-up-gesture-svgrepo-com.svg" alt="">
+    <span>1000</span>
+
+<img class="liked_disliked" src="./img/thumbs-down-hand-svgrepo-com.svg" alt="">
+<span>500</span>
+</div>
+</div>
+
+<div class="recommended">
+    <img class="thumbnail" src="./img/thumbnail (1).jpeg" alt="">
+    <p>YouTube thumbnail design</p>
+<p>1,000,000 views</p>
+<div ><img class="liked_disliked" src="./img/thumbs-up-gesture-svgrepo-com.svg" alt="">
+    <span>1000</span>
+
+<img class="liked_disliked" src="./img/thumbs-down-hand-svgrepo-com.svg" alt="">
+<span>500</span>
+</div>
+</div>
+
+<div class="recommended">
+    <img class="thumbnail" src="./img/secretsthumb.jpeg" alt="">
+    <p>YouTube thumbnail design</p>
+<p>1,000,000 views</p>
+<div ><img class="liked_disliked" src="./img/thumbs-up-gesture-svgrepo-com.svg" alt="">
+    <span>1000</span>
+
+<img class="liked_disliked" src="./img/thumbs-down-hand-svgrepo-com.svg" alt="">
+<span>500</span>
+</div>
+</div>
+
+<div class="recommended">
+    <img class="thumbnail" src="./img/attrac.jpeg" alt="">
+    <p>YouTube thumbnail design</p>
+<p>1,000,000 views</p>
+<div ><img class="liked_disliked" src="./img/thumbs-up-gesture-svgrepo-com.svg" alt="">
+    <span>1000</span>
+
+<img class="liked_disliked" src="./img/thumbs-down-hand-svgrepo-com.svg" alt="">
+<span>500</span>
+</div>
+</div>
+</div>
+</div>
+</div>
 </body>
 </html>
